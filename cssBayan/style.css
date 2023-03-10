@@ -1,66 +1,133 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-  background: #e3edf7;
+html {
+	font-size: 0.63rem;
+}
+
+.caption {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(250, 249, 246);
+}
+
+.mark {
+	font-size: 5rem;
+	padding: 1rem;
+	color: rgb(148, 128, 73)
+}
+
+.css-bayan-memes {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(250, 249, 246);
 }
 
 .bayan-memes {
-  margin: 60px auto;
-  width: 600px;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	min-height: 100vh;
 }
 
-.bayan-memes li {
-  list-style: none;
-  width: 100%;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #e3edf7;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+.chapter {
+	width: 100%;
+	box-shadow: 0px 1px rgb(236, 236, 229);
 }
 
-.bayan-memes li label {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
+.bayan {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	font-size: 2.5rem;
+	list-style: none;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-label::after {
-  content: "+";
-  display: flex;
-  margin-left: auto;
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: 600;
+.bayan-package {
+	display: flex;
+	justify-content: space-between;
 }
 
-input[type="radio"] {
-  display: none;
+.bayan-name {
+	color: rgb(26, 95, 187)
 }
 
-.bayan-memes-content {
-  color: #555;
-  padding: 0 10%;
-  line-height: 26%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.7s, padding 0.7s;
+.bayan-memes:hover {
+	background-color: rgb(239, 238, 235);
 }
 
-.bayan-memes input[type="radio"]:checked + label + .bayan-memes-content {
-  max-height: 100%;
-  padding: 10% 10% 20%;
+.bayan-memes:hover .bayan-name {
+	color: rgb(50, 37, 2)
 }
 
-.bayan-memes input[type="radio"]:checked + label::after {
-  content: "\D7";
+details[open] .bayan-name {
+	color: rgb(50, 37, 2)
+}
+
+.bayan-icon {
+	display: none;
+}
+
+.chapter:hover .bayan-icon,
+details[open] .bayan-icon {
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+.bayan-picture {
+	width: 70%;
+	height: 70%;
+}
+
+.summ-pin {
+	width: 0.7em;
+	height: 0.7em;
+	background: url(resources/svg/plus.svg) no-repeat center;
+}
+
+details[open] .summ-pin,
+.bayan-memes:hover .summ-pin {
+	background: url(resources/svg/close.svg) no-repeat center;
+}
+
+.bayan-memes:not(:hover) .summ-pin {
+	background: none;
+}
+
+/* mobile 320x568,
+tablet 820x1180,
+desktop 1920×1080 */
+
+@media (min-width: 1025px) {}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	.mark {
+		font-size: 4rem;
+	}
+
+	.bayan-memes {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.mark {
+		font-size: 3rem;
+	}
+
+	.summary {
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	.bayan-memes {
+		width: 70%;
+	}
 }
