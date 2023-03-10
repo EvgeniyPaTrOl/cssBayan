@@ -1,3 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 body {
-    font-family
+  background: #e3edf7;
+}
+
+.bayan-memes {
+  margin: 60px auto;
+  width: 600px;
+}
+
+.bayan-memes li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.bayan-memes li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::after {
+  content: "+";
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.bayan-memes-content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.bayan-memes input[type="radio"]:checked + label + .bayan-memes-content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.bayan-memes input[type="radio"]:checked + label::after {
+  content: "\D7";
 }
