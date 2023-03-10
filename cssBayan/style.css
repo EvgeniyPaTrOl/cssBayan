@@ -49,16 +49,16 @@ input[type="radio"] {
 
 .bayan-memes-content {
   color: #555;
-  padding: 0 10px;
-  line-height: 26px;
+  padding: 0 10%;
+  line-height: 26%;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
+  transition: max-height 0.7s, padding 0.7s;
 }
 
 .bayan-memes input[type="radio"]:checked + label + .bayan-memes-content {
-  max-height: 400px;
-  padding: 10px 10px 20px;
+  max-height: 100%;
+  padding: 10% 10% 20%;
 }
 
 .bayan-memes input[type="radio"]:checked + label::after {
