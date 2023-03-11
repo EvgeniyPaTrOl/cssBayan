@@ -1,15 +1,11 @@
 @import "reset.css";
 @import "normalize.css";
 
-/*  color: rgb(26, 95, 187); 
-
-color: rgb(190, 50, 50);
-*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
@@ -19,7 +15,6 @@ body {
 h1 {
   margin: 0;
   padding-top: 1px;
-  font-size: 5rem;
   color: rgb(0, 0, 0);
 }
 
@@ -27,6 +22,7 @@ h1 {
   margin: 0 auto;
   max-width: 80%;
   font-weight: bold;
+  font-size: large;
 }
 
 .bayan-memes-icon {
@@ -87,38 +83,38 @@ input {
   }
 
   .bayan-memes:hover .bayan-memes-icon,
-  input:checked~.chapter{
+  input:checked ~ .chapter {
     opacity: 1;
     color: rgb(0, 0, 0);
   }
-  
-  ul:hover{
-    color: brown;
+
+  ul:hover {
+    color: rgb(33, 10, 243);
   }
 
   /* animation bayan-memes-icon*/
   input:checked ~ .chapter > .bayan-memes-icon,
-  input:hover ~ .chapter > .bayan-memes-icon{
+  input:hover ~ .chapter > .bayan-memes-icon {
     rotate: 135deg;
   }
 
   /* activity */
   li:active label,
   li:active .bayan-memes-package > img {
-    cursor: copy;
+    cursor: pointer;
     transition: 1s;
-    color: rgb(123, 0, 255);
+    color: rgb(178, 11, 184);
     opacity: 0.5;
   }
 }
 
 @media (min-width: 1920px) {
   body {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: 2.8rem;
   }
 
   input:checked ~ .bayan-memes-package,
@@ -130,11 +126,11 @@ input {
 
 @media (min-width: 820px) {
   body {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.3rem;
   }
 
   input:checked ~ .bayan-memes-package,
@@ -146,11 +142,11 @@ input {
 
 @media (min-width: 320px) {
   body {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   /* the appearance of content */
