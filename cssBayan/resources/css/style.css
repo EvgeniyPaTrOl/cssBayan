@@ -83,15 +83,11 @@ input {
   }
 
   .bayan-memes:hover .bayan-memes-icon,
-  input:checked ~ .chapter {
+  .bayan-memes:hover, input:checked ~ .chapter {
     opacity: 1;
-    color: rgb(0, 0, 0);
+    color: rgb(24, 36, 216);
   }
-
-  ul:hover {
-    color: rgb(33, 10, 243);
-  }
-
+  
   /* animation bayan-memes-icon*/
   input:checked ~ .chapter > .bayan-memes-icon,
   input:hover ~ .chapter > .bayan-memes-icon {
