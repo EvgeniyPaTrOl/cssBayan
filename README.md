@@ -1,2 +1,2 @@
 # cssBayan
-[Css Bayan](https://EvgeniyPaTrOl.github.io/cssBayan/cssBayan/index.html)
+[CssBayan](https://EvgeniyPaTrOl.github.io/cssBayan/cssBayan/index.html)
