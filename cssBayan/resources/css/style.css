@@ -92,5 +92,13 @@ label {
     color: rgb(123, 0, 255);
     opacity: .5;
   }
-  
+
+  /* activity */
+  li:active label,
+  li:active .bayan-memes-package>img {
+    cursor: copy;
+    transition: 1s;
+    color: rgb(123, 0, 255);
+    opacity: .5;
+  }
 }
