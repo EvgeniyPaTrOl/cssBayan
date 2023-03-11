@@ -69,3 +69,28 @@ label {
     rotate: 135deg;
   }
 }
+
+@media (hover: hover) {
+  label {
+    cursor: pointer;
+  }
+
+  .bayan-memes:hover .bayan-memes-icon {
+    opacity: 1;
+  }
+
+  /* animation */
+  input:checked~.chapter>.bayan-memes-icon,
+  imput:hover~.chapter>.bayan-memes-icon {
+    rotate: 135deg;
+  }
+
+  li:active label,
+  li:active .bayan-memes-package>img {
+    cursor: copy;
+    transition: 1s;
+    color: rgb(123, 0, 255);
+    opacity: .5;
+  }
+  
+}
