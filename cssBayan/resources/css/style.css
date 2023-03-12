@@ -14,7 +14,7 @@ body {
 
 h1 {
   margin: 0;
-  padding-top: 1px;
+  padding-top: 1%;
   color: rgb(0, 0, 0);
 }
 
@@ -33,7 +33,7 @@ h1 {
 }
 
 li {
-  border-bottom: 1px groove rgba(184, 182, 179, 0.904);
+  border-bottom: .1rem groove rgba(184, 182, 179, 0.904);
 }
 
 label {
