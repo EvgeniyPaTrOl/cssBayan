@@ -1,0 +1,155 @@
+@import "reset.css";
+@import "normalize.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background: rgb(241, 240, 233);
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1%;
+  color: rgb(0, 0, 0);
+}
+
+.bayan-memes {
+  margin: 0 auto;
+  max-width: 80%;
+  font-weight: bold;
+  font-size: large;
+}
+
+.bayan-memes-icon {
+  display: inline-block;
+  width: 1rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+li {
+  border-bottom: .1rem groove rgba(184, 182, 179, 0.904);
+}
+
+label {
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+.chapter {
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.bayan-memes-package {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 0;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.bayan-memes-package > img {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  padding: 1%;
+}
+
+@media (hover: none) {
+  .bayan-memes:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  /* animation bayan-memes-icon */
+  input:checked ~ .chapter > .bayan-memes-icon {
+    opacity: 1;
+    rotate: 135deg;
+  }
+}
+
+@media (hover: hover) {
+  label {
+    cursor: pointer;
+  }
+
+  .bayan-memes:hover .bayan-memes-icon,
+  .bayan-memes:hover, input:checked ~ .chapter {
+    opacity: 1;
+    color: rgb(24, 36, 216);
+  }
+  
+  /* animation bayan-memes-icon*/
+  input:checked ~ .chapter > .bayan-memes-icon,
+  input:hover ~ .chapter > .bayan-memes-icon {
+    rotate: 135deg;
+  }
+
+  /* activity */
+  li:active label,
+  li:active .bayan-memes-package > img {
+    cursor: pointer;
+    transition: 1s;
+    color: rgb(178, 11, 184);
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  input:checked ~ .bayan-memes-package,
+  input:hover ~ .bayan-memes-package {
+    opacity: 1;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  input:checked ~ .bayan-memes-package,
+  input:hover ~ .bayan-memes-package {
+    opacity: 1;
+    height: 20rem;
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* the appearance of content */
+  input:checked ~ .bayan-memes-package,
+  input:hover ~ .bayan-memes-package {
+    opacity: 1;
+    height: 15rem;
+  }
+}
